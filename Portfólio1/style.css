@@ -1,0 +1,23 @@
+.message {
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 0.5em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+}
+
+.message-header {
+    background-color: white;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.message-header p {
+    color: hsl(0, 0%, 29%);
+}
+
+.message-body {
+    text-align: left;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+}
+
+.subtitle {
+    font-weight: bold;
+}

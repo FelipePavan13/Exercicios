@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #000;
+}
+
+.container {
+    margin: auto;
+    width: 40%;
+    background-color: #fff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 5rem;
+    border-radius: 5px; 
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.p-titulo {
+    margin: 20px 20px 0px 20px;
+}
+
+.escritaCampo {
+    font-weight: bold;
+}
+
+.campo {
+    margin: 30px 0px 0px 0px;
+}
+
+.button {
+    display: block;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: #ffff00;
+    border: none;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px #868686;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #000;
+    color: #ffff00;
+}
+
+.p-valor {
+    margin-top: 20px;
+    height: 40px;
+}
+
+.page-logo {
+    width: 200px;
+    background-color: #000;
+    padding: 1rem;
+    border-radius: 5px;
+    display: block;
+    margin: 80px auto 30px;
+}
