@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #10ac84;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content-container{
+    width: 40%;
+    height: 400px;
+    padding: 30px;
+    background-color: #ebebebe5;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #1b1b1b;
+    display: flex;
+
+    .box{
+        width: 50%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    #task-input{
+        width: 70%;
+        height: 40px;
+        font-size: 20px;
+        text-align: center;
+        outline: none;
+        border-radius: 5px;
+    }
+
+    #btn{
+        width: 70%;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #1b1b1b;
+        box-shadow: 3px 3px 2px #1b1b1b;
+        cursor: pointer;
+        background-color: #10ac84;
+        color: white;
+        font-size: 20px;
+        outline: none;
+        transition: .2s linear;
+
+        &:hover{
+            background-color: #fff;
+            color: #10ac84;
+            box-shadow: 1px 1px 2px #1b1b1b;
+        }
+    }
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+
+    ul{
+        list-style-type: none;
+        
+        li{
+            width: 90%;
+            height: 40px;
+            line-height: 40px;
+            text-indent: 10px;
+            margin: 15px auto;
+            box-shadow: 1px 1px 5px #1b1b1b;
+            border-radius: 5px;
+            background-color: #ebebeb;
+            position: relative;
+            transition: .3s linear;
+            overflow: hidden;
+            font-size: 20px;
+
+            button{
+                position: absolute;
+                right: -40px;
+                border-radius: 0px 5px 5px 0px;
+                border: none;
+                width: 40px;
+                height: 100%;
+                outline: none;
+                background: red;
+                color: white;
+                font-weight: bold;
+                transition: .2s linear;
+            }
+        }
+
+        li:hover button{
+            cursor: pointer;
+            transform: translate(-40px);
+        }
+    }
+}
