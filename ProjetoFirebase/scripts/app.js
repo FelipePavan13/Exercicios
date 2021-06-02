@@ -14,3 +14,50 @@
 
 //Criação da variável pra acessar o banco de dados
   let db = firebase.firestore();
+
+  let auth = firebase.auth();
+
+// function createUser() {
+//     let newUserEmail = "novoteste@teste.com";
+//     let newUserPassword = "123abc";
+
+//     auth.createUserWithEmailAndPassword(newUserEmail, newUserPassword)
+//     .then((user)=>{
+//         console.log(user);
+//     }).catch((error)=>{
+//         console.log(error);
+//     })
+// }
+
+function login() {
+    let userEmail = "novoteste@teste.com";
+    let userPassword = "123abc";
+
+    auth.signInWithEmailAndPassword(userEmail, userPassword)
+        .then((loggedUser) => {
+            console.log(auth.currentUser);
+        }).catch((error) => {
+            console.log(error);
+        });
+}
+
+// Método pra saber se existe ou não um usuário logado
+auth.onAuthStateChanged((user) => {
+    if(user){
+        console.log('Usuário logado.')
+    } else {
+        console.log('Ninguém logado.')
+    }
+})
+
+function logout() {
+    auth.signOut()
+    .then((obj) => {
+        console.log('Usuário foi deslogado.');
+    })
+    .catch(err => {
+        console.log(err);
+    })
+}
+
+// setTimeout(logout, 2000)
