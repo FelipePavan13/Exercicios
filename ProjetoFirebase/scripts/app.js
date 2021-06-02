@@ -11,4 +11,6 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+
+//Criação da variável pra acessar o banco de dados
+  let db = firebase.firestore();
